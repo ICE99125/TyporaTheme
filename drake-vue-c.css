@@ -685,6 +685,19 @@ span.md-def-name {
     font-weight: normal;
 }
 
+/* <kbd>...</kdb> */
+kbd {
+    font-family: var(--text-font);
+    border: none;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0 .4rem;
+    font-size: .9rem;
+    padding: .3em .4em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
 .md-def-name:after {
     content: ". ^";
     color: var(--text-color);
