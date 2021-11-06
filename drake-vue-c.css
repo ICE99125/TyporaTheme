@@ -12,6 +12,9 @@
     --title-font: "筑紫A丸";
     --title-color: #000000;
 
+    /* 顶栏颜色 */
+    --top-color: rgba(255, 255, 255, 0.5);
+
     /* 背景颜色 */
     --bg-color: #ffffff;
 
@@ -38,6 +41,7 @@
     /* 代码块 */
     --code-block-bg-color: #f6f5f5;
     --code-block-color: #525252;
+    /* 语言选择 */
     --tooltip-color: #fff;
 
     /* 右边栏 */
@@ -685,19 +689,6 @@ span.md-def-name {
     font-weight: normal;
 }
 
-/* <kbd>...</kdb> */
-kbd {
-    font-family: var(--text-font);
-    border: none;
-    background: var(--bg-color);
-    color: var(--text-color);
-    margin: 0 .4rem;
-    font-size: .9rem;
-    padding: .3em .4em;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-
 .md-def-name:after {
     content: ". ^";
     color: var(--text-color);
@@ -733,8 +724,8 @@ kbd {
 .ty-lang-list::-webkit-scrollbar-thumb,
 /* 文档内容滚动条 */
 content::-webkit-scrollbar-thumb,
-megamenu-content::-webkit-scrollbar-thumb,
-window-content::-webkit-scrollbar-thumb,
+#megamenu-content::-webkit-scrollbar-thumb,
+.pane::-webkit-scrollbar-thumb,
 /* 文件树滚动条 */
 .sidebar-content-content::-webkit-scrollbar-thumb {
     border-radius: 2.5px !important;
@@ -744,8 +735,8 @@ window-content::-webkit-scrollbar-thumb,
 /* 滚动条宽度 */
 .ty-lang-list::-webkit-scrollbar,
 content::-webkit-scrollbar,
-megamenu-content::-webkit-scrollbar,
-window-content::-webkit-scrollbar,
+#megamenu-content::-webkit-scrollbar,
+.pane::-webkit-scrollbar,
 .sidebar-content-content::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -901,6 +892,7 @@ div.code-tooltip-content {
     height: inherit;
     background-color: var(--bg-color);
 }
+
 
 #megamenu-menu-sidebar {
     background-color: var(--bg-color);
