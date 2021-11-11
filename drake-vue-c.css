@@ -200,6 +200,23 @@ select {
     background-color: var(--code-block-bg-color);
 }
 
+/* html块 */
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    border-radius: .5em 0 .5em .5em;
+    font-family: var(--monospace);
+    font-size: 1em;
+    padding: 1em;
+}
+
+.md-htmlblock-container.md-rawblock-container {
+    border-radius: .5em 0 .5em .5em;
+    padding: .2em;
+}
+
+/* html块右上角按钮 */
+.md-rawblock-tooltip.md-rawblock-control {
+    border-radius: .5em .5em 0 0;
+}
 
 /* 引用块 */
 blockquote:before {
